@@ -64,7 +64,7 @@ namespace MovieWebsite.Controllers
             {
                 return View(producer);
             }
-            if(Id == producer.Id)
+            if (Id == producer.Id)
             {
                 await _service.UpdateAsync(Id, producer);
                 return RedirectToAction($"{nameof(Index)}");

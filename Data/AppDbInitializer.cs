@@ -22,31 +22,31 @@ namespace MovieWebsite.Data
                         new Cinema()
                         {
                             Name = "Cinema 1",
-                            Logo = "http://dotnethow.net/images/cinemas/cinema-1.jpeg",
+                            Logo = "/images/cinemas/cinema-1.jpg",
                             Description = "This is the description of the first cinema"
                         },
                         new Cinema()
                         {
                             Name = "Cinema 2",
-                            Logo = "http://dotnethow.net/images/cinemas/cinema-2.jpeg",
+                            Logo = "/images/cinemas/cinema-2.jpg",
                             Description = "This is the description of the first cinema"
                         },
                         new Cinema()
                         {
                             Name = "Cinema 3",
-                            Logo = "http://dotnethow.net/images/cinemas/cinema-3.jpeg",
+                            Logo = "/images/cinemas/cinema-3.jpg",
                             Description = "This is the description of the first cinema"
                         },
                         new Cinema()
                         {
                             Name = "Cinema 4",
-                            Logo = "http://dotnethow.net/images/cinemas/cinema-4.jpeg",
+                            Logo = "/images/cinemas/cinema-4.jpg",
                             Description = "This is the description of the first cinema"
                         },
                         new Cinema()
                         {
                             Name = "Cinema 5",
-                            Logo = "http://dotnethow.net/images/cinemas/cinema-5.jpeg",
+                            Logo = "/images/cinemas/cinema-5.jpg",
                             Description = "This is the description of the first cinema"
                         },
                     });
@@ -61,32 +61,32 @@ namespace MovieWebsite.Data
                         {
                             FullName = "Actor 1",
                             Bio = "This is the Bio of the first actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/actors/actor-1.jpeg"
+                            ProfilePictureURL = "/images/actors/actor-1.jpg"
 
                         },
                         new Actor()
                         {
                             FullName = "Actor 2",
                             Bio = "This is the Bio of the second actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/actors/actor-2.jpeg"
+                            ProfilePictureURL = "/images/actors/actor-2.jpg"
                         },
                         new Actor()
                         {
                             FullName = "Actor 3",
                             Bio = "This is the Bio of the second actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/actors/actor-3.jpeg"
+                            ProfilePictureURL = "/images/actors/actor-3.jpg"
                         },
                         new Actor()
                         {
                             FullName = "Actor 4",
                             Bio = "This is the Bio of the second actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/actors/actor-4.jpeg"
+                            ProfilePictureURL = "/images/actors/actor-4.jpg"
                         },
                         new Actor()
                         {
                             FullName = "Actor 5",
                             Bio = "This is the Bio of the second actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/actors/actor-5.jpeg"
+                            ProfilePictureURL = "/images/actors/actor-5.jpg"
                         }
                     });
                     context.SaveChanges();
@@ -100,32 +100,32 @@ namespace MovieWebsite.Data
                         {
                             FullName = "Producer 1",
                             Bio = "This is the Bio of the first actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/producers/producer-1.jpeg"
+                            ProfilePictureURL = "/images/producers/producer-1.jpg"
 
                         },
                         new Producer()
                         {
                             FullName = "Producer 2",
                             Bio = "This is the Bio of the second actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/producers/producer-2.jpeg"
+                            ProfilePictureURL = "/images/producers/producer-2.jpg"
                         },
                         new Producer()
                         {
                             FullName = "Producer 3",
                             Bio = "This is the Bio of the second actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/producers/producer-3.jpeg"
+                            ProfilePictureURL = "/images/producers/producer-3.jpg"
                         },
                         new Producer()
                         {
                             FullName = "Producer 4",
                             Bio = "This is the Bio of the second actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/producers/producer-4.jpeg"
+                            ProfilePictureURL = "/images/producers/producer-4.jpg"
                         },
                         new Producer()
                         {
                             FullName = "Producer 5",
                             Bio = "This is the Bio of the second actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/producers/producer-5.jpeg"
+                            ProfilePictureURL = "/images/producers/producer-5.jpg"
                         }
                     });
                     context.SaveChanges();
@@ -140,11 +140,11 @@ namespace MovieWebsite.Data
                             Name = "Life",
                             Description = "This is the Life movie description",
                             Price = 39.50,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-3.jpeg",
+                            ImageURL = "/images/movies/movie-3.jpg",
                             StartDate = DateTime.Now.AddDays(-10),
                             EndDate = DateTime.Now.AddDays(10),
-                            CinemaId = 3,
-                            ProducerId = 3,
+                            CinemaId = 13,
+                            ProducerId = 13,
                             MovieCategory = MovieCategory.Documentary
                         },
                         new Movie()
@@ -152,11 +152,11 @@ namespace MovieWebsite.Data
                             Name = "The Shawshank Redemption",
                             Description = "This is the Shawshank Redemption description",
                             Price = 29.50,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-1.jpeg",
+                            ImageURL = "/images/movies/movie-1.jpg",
                             StartDate = DateTime.Now,
                             EndDate = DateTime.Now.AddDays(3),
-                            CinemaId = 1,
-                            ProducerId = 1,
+                            CinemaId = 11,
+                            ProducerId = 11,
                             MovieCategory = MovieCategory.Action
                         },
                         new Movie()
@@ -164,11 +164,11 @@ namespace MovieWebsite.Data
                             Name = "Ghost",
                             Description = "This is the Ghost movie description",
                             Price = 39.50,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-4.jpeg",
+                            ImageURL = "/images/movies/movie-4.jpg",
                             StartDate = DateTime.Now,
                             EndDate = DateTime.Now.AddDays(7),
-                            CinemaId = 4,
-                            ProducerId = 4,
+                            CinemaId = 14,
+                            ProducerId = 14,
                             MovieCategory = MovieCategory.Horror
                         },
                         new Movie()
@@ -176,11 +176,11 @@ namespace MovieWebsite.Data
                             Name = "Race",
                             Description = "This is the Race movie description",
                             Price = 39.50,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-6.jpeg",
+                            ImageURL = "/images/movies/movie-6.jpg",
                             StartDate = DateTime.Now.AddDays(-10),
                             EndDate = DateTime.Now.AddDays(-5),
-                            CinemaId = 1,
-                            ProducerId = 2,
+                            CinemaId = 11,
+                            ProducerId = 12,
                             MovieCategory = MovieCategory.Documentary
                         },
                         new Movie()
@@ -188,11 +188,11 @@ namespace MovieWebsite.Data
                             Name = "Scoob",
                             Description = "This is the Scoob movie description",
                             Price = 39.50,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-7.jpeg",
+                            ImageURL = "/images/movies/movie-7.jpg",
                             StartDate = DateTime.Now.AddDays(-10),
                             EndDate = DateTime.Now.AddDays(-2),
-                            CinemaId = 1,
-                            ProducerId = 3,
+                            CinemaId = 11,
+                            ProducerId = 13,
                             MovieCategory = MovieCategory.Cartoon
                         },
                         new Movie()
@@ -200,11 +200,11 @@ namespace MovieWebsite.Data
                             Name = "Cold Soles",
                             Description = "This is the Cold Soles movie description",
                             Price = 39.50,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-8.jpeg",
+                            ImageURL = "/images/movies/movie-8.jpg",
                             StartDate = DateTime.Now.AddDays(3),
                             EndDate = DateTime.Now.AddDays(20),
-                            CinemaId = 1,
-                            ProducerId = 5,
+                            CinemaId = 11,
+                            ProducerId = 15,
                             MovieCategory = MovieCategory.Drama
                         }
                     });
@@ -217,96 +217,96 @@ namespace MovieWebsite.Data
                     {
                         new Movie_Actor()
                         {
-                            ActorId = 1,
-                            MovieId = 1
+                            ActorId = 21,
+                            MovieId = 12
                         },
                         new Movie_Actor()
                         {
-                            ActorId = 3,
-                            MovieId = 1
+                            ActorId = 23,
+                            MovieId = 12
                         },
 
                          new Movie_Actor()
                         {
-                            ActorId = 1,
-                            MovieId = 2
+                            ActorId = 21,
+                            MovieId = 12
                         },
                          new Movie_Actor()
                         {
-                            ActorId = 4,
-                            MovieId = 2
+                            ActorId = 22,
+                            MovieId = 12
                         },
 
                         new Movie_Actor()
                         {
-                            ActorId = 1,
-                            MovieId = 3
+                            ActorId = 21,
+                            MovieId = 13
                         },
                         new Movie_Actor()
                         {
-                            ActorId = 2,
-                            MovieId = 3
+                            ActorId = 20,
+                            MovieId = 13
                         },
                         new Movie_Actor()
                         {
-                            ActorId = 5,
-                            MovieId = 3
-                        },
-
-
-                        new Movie_Actor()
-                        {
-                            ActorId = 2,
-                            MovieId = 4
-                        },
-                        new Movie_Actor()
-                        {
-                            ActorId = 3,
-                            MovieId = 4
-                        },
-                        new Movie_Actor()
-                        {
-                            ActorId = 4,
-                            MovieId = 4
+                            ActorId = 23,
+                            MovieId = 13
                         },
 
 
                         new Movie_Actor()
                         {
-                            ActorId = 2,
-                            MovieId = 5
+                            ActorId = 20,
+                            MovieId = 14
                         },
                         new Movie_Actor()
                         {
-                            ActorId = 3,
-                            MovieId = 5
+                            ActorId = 23,
+                            MovieId = 14
                         },
                         new Movie_Actor()
                         {
-                            ActorId = 4,
-                            MovieId = 5
-                        },
-                        new Movie_Actor()
-                        {
-                            ActorId = 5,
-                            MovieId = 5
+                            ActorId = 20,
+                            MovieId = 14
                         },
 
 
                         new Movie_Actor()
                         {
-                            ActorId = 3,
-                            MovieId = 6
+                            ActorId = 22,
+                            MovieId = 15
                         },
                         new Movie_Actor()
                         {
-                            ActorId = 4,
-                            MovieId = 6
+                            ActorId = 23,
+                            MovieId = 15
                         },
                         new Movie_Actor()
                         {
-                            ActorId = 5,
-                            MovieId = 6
+                            ActorId = 20,
+                            MovieId = 15
+                        },
+                        new Movie_Actor()
+                        {
+                            ActorId = 23,
+                            MovieId = 15
+                        },
+
+
+                        new Movie_Actor()
+                        {
+                            ActorId = 23,
+                            MovieId = 16
+                        },
+                        new Movie_Actor()
+                        {
+                            ActorId = 22,
+                            MovieId = 16
+                        },
+                        new Movie_Actor()
+                        {
+                            ActorId = 23,
+                            MovieId = 16
                         },
                     });
                     context.SaveChanges();

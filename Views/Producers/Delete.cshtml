@@ -30,13 +30,15 @@
                         <span asp-validation-for="Bio" class="text-danger"></span>
                     </div>
 
+                   <br />
                     <div class="form-group">
-                     <form asp-action="Delete">
+                        <form asp-action="Delete">
                             <input type="hidden" asp-for="Id" />
                             <input type="submit" value="Confirm" class="btn btn-danger float-right" />
+                        | <a class="btn btn-outline-secondary" asp-action="Index">Show All</a>
+
                         </form>
-                        <a class="btn btn-outline-secondary" asp-action="Index">Show All</a>
-                    </div>
+                   </div>
             </div>
         </div>
     </div>

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MovieWebsite.Data.Cart;
 using MovieWebsite.Data.Services;
 using MovieWebsite.Data.ViewModels;
@@ -6,6 +7,7 @@ using System.Security.Claims;
 
 namespace MovieWebsite.Controllers
 {
+    
     public class OrdersController : Controller
     {
         private readonly IMoviesService _moviesService;
@@ -40,6 +42,7 @@ namespace MovieWebsite.Controllers
 
             return View(response);
         }
+        [Authorize]
         public async Task<IActionResult> AddItemToShoppingCart(int id)
         {
             var item = await _moviesService.GetMovieByIdAsync(id);
@@ -60,7 +63,7 @@ namespace MovieWebsite.Controllers
             {
                 _shoppingCart.RemoveItemFromCart(item);
             }
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(ShoppingCart));
         }
 
 
